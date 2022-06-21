@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap");
+/* for josefin sans font   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  h4 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .formcontainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    .imagebox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 3rem;
+      .image {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      label {
+        position: absolute;
+        top: 75%;
+        left: 52%;
+        border-radius: 50%;
+        height: 1.7rem;
+        width: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(4, 10, 10);
+        cursor: pointer;
+      }
+    }
+    .formrow {
+      margin: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input{
+        width: 60%;
+        padding: 0.5rem;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid rgb(196, 193, 193);
+        outline: none;
+      }
+    }
+  }
+}

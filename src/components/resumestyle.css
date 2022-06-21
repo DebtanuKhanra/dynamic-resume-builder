@@ -1,0 +1,251 @@
+.rsm .containerl {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  max-height: 1000px;
+  min-height: 1000px;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.rsm .containerl .left {
+  position: relative;
+  background-color: rgb(18, 25, 65);
+  padding: 40px;
+}
+.rsm .profileTxt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.rsm .profileTxt .Imgbox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.rsm .profileTxt .Imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rsm .profileTxt h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.rsm .profileTxt span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.rsm .contactInfo {
+  padding-top: 40px;
+}
+.rsm .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.rsm .contactInfo ul {
+  position: relative;
+}
+.rsm .contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.rsm .contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 20px;
+  color: #03a9f4;
+}
+.rsm .contactInfo ul li .text {
+  color: #fff;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.rsm .contactInfo.education {
+  margin-bottom: 15px;
+}
+.rsm .contactInfo.education h6 {
+  color: #29bbff;
+  font-weight: 500;
+}
+.rsm .contactInfo.education h5:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.rsm .contactInfo.education h5 {
+  color: #fff;
+  font-weight: 300;
+}
+.rsm .contactInfo.language .percent {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: #beeaff;
+  display: block;
+  margin-top: 5px;
+}
+.rsm .contactInfo.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #29bbff;
+}
+.rsm .containerl .right {
+  position: relative;
+  background-color: #fff;
+  padding: 50px;
+}
+.rsm .about:last-child {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.rsm .title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.rsm p {
+  color: #333;
+}
+.rsm .about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.rsm .about .box .year_company {
+  min-width: 150px;
+}
+.rsm .about .box .year_company h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #858c90;
+}
+.rsm .about .box .text h4 {
+  text-transform: uppercase;
+  color: #13688f;
+  font-size: 15px;
+}
+.rsm .skills .box {
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+}
+.rsm .skills .box h4 {
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-weight: 600;
+}
+.rsm .skills .box .percent {
+  margin-top: 5px;
+  background: #c4c6ca;
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+.rsm .skills .box .percent div {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2a7da2;
+}
+.rsm .hobbies ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.rsm .hobbies ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.rsm .hobbies ul li .fa {
+  color: #2a7da2;
+  font-size: 20px;
+  margin-right: 6px;
+}
+.rsm .social ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.rsm .social ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.rsm .social ul li .fa {
+  color: #2a7da2;
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+@media (max-width: 1000px) {
+  .containerl {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hobbies ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title2 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+
+  .about .box .year_company {
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+
+  .hobbies ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title2 {
+    text-align: center;
+  }
+
+  .social ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* responsive design attributes ends*//*# sourceMappingURL=resumestyle.css.map */
